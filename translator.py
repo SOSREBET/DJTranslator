@@ -303,8 +303,8 @@ def manager(codes: list,
 if __name__ == '__main__':
     manager(
         codes=['de', 'fr', 'ja', 'tr', 'ru', 'uk'],
-        driver_path='/home/sosrebet/Projects/AutoTrans/chromedriver',
-        locale_path='/home/sosrebet/Projects/DJAuth/locale',
+        driver_path='/DJTranslator/chromedriver',
+        locale_path='/DJAuth/locale',
         multi=True,
         lang_interface='ru',
     )
