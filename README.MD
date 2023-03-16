@@ -38,6 +38,8 @@ foo@bar:~/DJTranslator$ source venv/bin/activate
 (venv) foo@bar:~/DJTranslator$ pip install -r requirements.txt
 ```
 
+5. Edit translator.py to change the argument values when running the manager function. Run translator.py.
+
 ## How it works
 
 The translator function opens locale_path/code/LC_MESSAGES/django.po and iterates over each line. Each string is checked with the check_translated function (if the string is a django replica, it checks for an existing translation), untranslated strings will be passed to the translate function which will return their translation via GT, after which the string will be written along with its translation.
