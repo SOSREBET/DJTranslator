@@ -14,6 +14,13 @@ The script is based on selenium 4.8 and python 3.9.
 - Save python formatting strings
 - Save classes of html strings
 
+## How it works
+
+The translator function opens locale_path/code/LC_MESSAGES/django.po and iterates over each line. Each string is checked with the check_translated function (if the string is a django replica, it checks for an existing translation), untranslated strings will be passed to the translate function which will return their translation via GT, after which the string will be written along with its translation.
+
+> The code called Simple string refers to a string that fits on one line in msgid
+Complex string - a string that does not fit on one msgid line
+
 ## Getting Started
 
 1. Clone the repository from Github and switch to the new directory:
@@ -39,13 +46,6 @@ foo@bar:~/DJTranslator$ source venv/bin/activate
 ```
 
 5. Edit translator.py to change the argument values when running the manager function. Run translator.py.
-
-## How it works
-
-The translator function opens locale_path/code/LC_MESSAGES/django.po and iterates over each line. Each string is checked with the check_translated function (if the string is a django replica, it checks for an existing translation), untranslated strings will be passed to the translate function which will return their translation via GT, after which the string will be written along with its translation.
-
-> The code called Simple string refers to a string that fits on one line in msgid
-Complex string - a string that does not fit on one msgid line
 
 ## Usage
 
