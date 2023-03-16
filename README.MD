@@ -19,7 +19,7 @@ The script is based on selenium 4.8 and python 3.9.
 1. Clone the repository from Github and switch to the new directory:
 
 ```bash
-(venv) foo@bar:~$ git clone https://github.com/SOSREBET/DJTransaltor
+(venv) foo@bar:~$ git clone https://github.com/SOSREBET/DJTranslator.git
 (venv) foo@bar:~$ cd DJTranslator/
 ```
 
