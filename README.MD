@@ -52,7 +52,6 @@ The manager takes the following arguments:
 - lang_interface: Language (code) in which GT will be opened
 - from_lang: Language code from which the translation will be carried out
 - retry: Attempts to translate
-- сохр питн формат
 
 <br>
 
