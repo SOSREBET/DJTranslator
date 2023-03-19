@@ -72,3 +72,5 @@ If your GT does not have time to translate, you can increase the first value (1.
    I tried to implement a single Class, but driverChrome is non-serializable, as a result of which multiprocessing stops working.
 2. Implement large line breaks django.po:<br>
    It was possible to implement these transfers, but because of this, the stability and quality of the translation deteriorated. I've tried different ways, and in the end I can say this: if you really need hyphens, try to implement them through the maximum length of the line.
+
+> Note that sometimes GT can make mistakes, but compilemessages will let you know.
